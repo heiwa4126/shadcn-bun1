@@ -6,7 +6,11 @@
 	"scripts": {
 		"dev": "bun --hot src/index.ts",
 		"start": "NODE_ENV=production bun src/index.ts",
-		"build": "bun run build.ts"
+		"build": "bun run build.ts",
+		"format": "oxfmt",
+		"lint": "oxlint .",
+		"lint-tsc": "tsc --noEmit",
+		"check": "oxlint . && oxfmt"
 	},
 	"dependencies": {
 		"@radix-ui/react-label": "^2.1.15",
