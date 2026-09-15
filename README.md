@@ -1,5 +1,13 @@
 # bun-react-tailwind-shadcn-template
 
+Bun v1.4 で
+`bun init --react=shadcn`
+で作った
+Bun + React + Tailwind CSS + shadcn/ui
+のパッケージ。
+
+## 開発
+
 To install dependencies:
 
 ```bash
@@ -18,4 +26,5 @@ To run for production:
 bun start
 ```
 
-This project was created using `bun init` in bun v1.4.2. [Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
+This project was created using `bun init` in bun v1.4.2.
+[Bun](https://bun.com) is a fast all-in-one JavaScript runtime.
