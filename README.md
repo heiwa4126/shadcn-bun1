@@ -1,4 +1,4 @@
-# bun-react-tailwind-shadcn-template
+# shadcn-bun1
 
 Bun v1.4 で
 `bun init --react=shadcn`
