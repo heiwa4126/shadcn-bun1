@@ -7,10 +7,11 @@
 		"dev": "bun --hot src/index.ts",
 		"start": "NODE_ENV=production bun src/index.ts",
 		"build": "bun run build.ts",
-		"format": "oxfmt",
-		"lint": "oxlint .",
-		"lint-tsc": "tsc --noEmit",
-		"check": "oxlint . && oxfmt"
+		"format": "bun fmt",
+		"lint": "bun check --no-script",
+		"check": "bun fmt && bun check --no-script",
+		"update:components": "bunx shadcn@latest add button card input label select textarea --overwrite",
+		"lint-tsc": "tsc --noEmit"
 	},
 	"dependencies": {
 		"@radix-ui/react-label": "^2.1.17",
@@ -19,7 +20,9 @@
 		"bun-plugin-tailwind": "^0.1.2",
 		"class-variance-authority": "^0.7.1",
 		"clsx": "^2.1.1",
-		"lucide-react": "^1.70.0",
+		"cn": "^0.5.2",
+		"lucide-react": "^1.72.0",
+		"radix-ui": "^1.8.1",
 		"react": "^19.3.1",
 		"react-dom": "^19.3.1",
 		"tailwind-merge": "^3.7.0",
